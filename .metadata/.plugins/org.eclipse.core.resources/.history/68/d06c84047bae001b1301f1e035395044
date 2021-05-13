@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<canvas id="canvas" width="200" height="100" style="border: 1px"></canvas>
+	<script type="text/javascript">
+		var canvs = document.getElementById("canvas");
+		var context = canvs.getContext("2d");
+		context.fillStyle = "#00FF00";
+		context.fillRect(0,0,100,50);
+	</script>
+</body>
+</html>
