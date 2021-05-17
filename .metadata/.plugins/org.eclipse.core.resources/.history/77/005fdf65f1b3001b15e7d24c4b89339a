@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>request 테스트 폼</h2>
+<hr>
+<form method="post" action="request_test.jsp">
+<table style="border: 1 solid black">
+	<tbody>
+		<tr>
+			<td>이름</td>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>직업</td>
+			<td><select name="job">
+				<option value="전문직" selected="selected">전문직</option>
+				<option value="계약직">계약직</option>
+				<option value="아르바이트">아르바이트</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>관심분야</td>
+			<td>
+				<input type="radio" name="category" value="정치" checked="checked">정치
+				<input type="radio" name="category" value="사회">사회
+				<input type="radio" name="category" value="정보통신">정보통신
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="submit" value="확인">
+				<input type="reset" value="취소">
+			</td>
+		</tr>
+	</tbody>
+</table>
+</form>
+</body>
+</html>

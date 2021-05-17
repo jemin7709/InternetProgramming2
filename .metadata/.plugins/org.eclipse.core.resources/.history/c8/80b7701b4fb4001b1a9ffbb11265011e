@@ -1,0 +1,47 @@
+<%@page import="java.util.Date"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String id = session.getId();
+Date time = new Date();
+Date createTime = new Date();
+int count = 0;
+String scount = (String)application.getAttribute("count");
+if(scount!=null){
+	count = Integer.parseInt(scount);
+	application.setAttribute("count", Integer.toString(++count));
+}
+String ctime = (String)application.getAttribute("createTime");
+%>
+<h2>Session track</h2>
+<table>
+	<tr>
+		<th>Session info</th>
+		<th>detail</th>
+	</tr>
+	<tr>
+		<td>session id</td>
+		<td><%=id%></td>
+	</tr>
+	<tr>
+		<td>Creation time</td>
+		<td><%=ctime%></td>
+	</tr>
+	<tr>
+		<td>Last access time</td>
+		<td><%=time%></td>
+	</tr>
+	<tr>
+		<td>Access Count</td>
+		<td><%=count%></td>
+	</tr>
+</table>
+</body>
+</html>

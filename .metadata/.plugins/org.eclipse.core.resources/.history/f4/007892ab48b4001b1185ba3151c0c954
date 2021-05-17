@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="1.jsp">
+<b>input a message: </b><input type="text" value="">
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
